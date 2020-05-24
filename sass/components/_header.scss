@@ -1,0 +1,39 @@
+header {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 12.5vh 0;
+    width: 7.5vw;
+    height: 87.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 99;
+
+    a {
+        height: 5vh;
+        width: 5vh;
+        margin: 2vh 0 0;
+        border-radius: 50%;
+        background-color: rgba(160, 160, 160, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.75s;
+
+        &:hover {
+            background-color : rgb(37, 71, 38);
+            transform: scale(1.1);
+            img {
+                opacity: 1;
+            }
+        }
+    }
+
+    img {
+        width: 40%;
+        height: auto;
+        opacity: 0.75;
+    }
+}

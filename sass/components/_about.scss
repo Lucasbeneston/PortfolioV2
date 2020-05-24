@@ -1,0 +1,32 @@
+.main {
+    &-about {
+        padding: 0 7.5%;
+        height: 87.5vh;
+        margin-top: 12.5vh;
+        position: fixed;
+        display: flex;
+
+        &-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 7.5%;
+            width: 60%;
+            height: 100%;
+            text-align: right;
+
+            & p {
+                padding-left: 20%;
+            }
+        }
+
+        &-img {
+            width: 40%;
+            height: 100%;
+            background-image: url(../../images/Lucas.jpg);
+            background-size: cover;
+            background-position: center;
+            background-color: rgb(134, 134, 134); /* Sécurité si l'image ne se charge pas */
+        }
+    }
+}
