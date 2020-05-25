@@ -6,4 +6,8 @@ footer{
     height: 12.5vh;
     position: relative;
     background-color: rgb(241, 241, 241);
+
+    @include media(phone){
+        padding-bottom: 12.5vh;
+    }
 }

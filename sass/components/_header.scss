@@ -11,6 +11,21 @@ header {
     align-items: center;
     z-index: 99;
 
+    @include media(tablet) {
+        height: 92.5vh;
+        padding: 7.5vh 0;
+    }
+
+    @include media(phone) {
+        flex-direction: row;
+        justify-content: center;
+        height: 7.5vh;
+        width: 75vw;
+        margin-right: 12.5vw;
+        padding: 0;
+        bottom: 0;
+    }
+
     a {
         height: 5vh;
         width: 5vh;
@@ -21,6 +36,17 @@ header {
         justify-content: center;
         align-items: center;
         transition: 0.75s;
+
+        @include media(tablet) {
+            height: 3vh;
+            width: 3vh;
+        }
+
+        @include media(phone) {
+            margin: 0 5vw;
+            height: 4vh;
+            width: 4vh;
+        }
 
         &:hover {
             background-color : rgb(37, 71, 38);

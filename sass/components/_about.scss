@@ -6,6 +6,18 @@
         position: fixed;
         display: flex;
 
+        @include media(tablet) {
+            height: 60vh;
+            margin-top: 7.5vh;
+        }
+
+        @include media(phone) {
+            height: 72.5vh;
+            margin-top: 7.5vh;
+            padding: 0;
+            background-color: greenyellow;
+        }
+
         &-text{
             display: flex;
             flex-direction: column;
@@ -15,18 +27,50 @@
             height: 100%;
             text-align: right;
 
-            & p {
+            @include media(tablet) {
+                padding: 5%;
+            }
+
+            @include media(phone) {
+                background-color: rgba(0, 0, 0, 0.75);
+                padding: 7.5%;
+                width: 100%;
+                justify-content: center;
+                position: fixed;
+                text-align: center;
+                top: 0;
+                z-index: 99;
+            }
+
+            p {
                 padding-left: 20%;
+
+                @include media(tablet) {
+                    padding-left: 0;
+                }
+
+                @include media(phone) {
+                    padding-left: 0;
+                    color: rgb(194, 194, 194);
+                }
             }
         }
 
         &-img {
             width: 40%;
             height: 100%;
-            background-image: url(../../images/Lucas.jpg);
+            background-image: url(../images/Lucas.jpg);
             background-size: cover;
             background-position: center;
             background-color: rgb(134, 134, 134); /* Sécurité si l'image ne se charge pas */
+
+            @include media(phone) {
+                height: 100vh;
+                width: 100%;
+                position: fixed;
+                text-align: center;
+                top: 0;
+            }
         }
     }
 }

@@ -59,16 +59,32 @@ h1 {
   font-weight: bold;
   color: #254726;
 }
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
 h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-style: italic;
 }
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.75rem;
+    color: #c2c2c2;
+  }
+}
 
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 h4 {
@@ -76,6 +92,11 @@ h4 {
   font-style: italic;
   margin-bottom: 0.75rem;
   color: #254726;
+}
+@media only screen and (max-width: 767px) {
+  h4 {
+    font-size: 0.85rem;
+  }
 }
 
 h5 {
@@ -87,6 +108,12 @@ p {
   font-size: 1rem;
   line-height: 1.75rem;
   color: #646464;
+}
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
 }
 
 header {
@@ -102,6 +129,23 @@ header {
   align-items: center;
   z-index: 99;
 }
+@media only screen and (max-width: 1023px) {
+  header {
+    height: 92.5vh;
+    padding: 7.5vh 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header {
+    flex-direction: row;
+    justify-content: center;
+    height: 7.5vh;
+    width: 75vw;
+    margin-right: 12.5vw;
+    padding: 0;
+    bottom: 0;
+  }
+}
 header a {
   height: 5vh;
   width: 5vh;
@@ -112,6 +156,19 @@ header a {
   justify-content: center;
   align-items: center;
   transition: 0.75s;
+}
+@media only screen and (max-width: 1023px) {
+  header a {
+    height: 3vh;
+    width: 3vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header a {
+    margin: 0 5vw;
+    height: 4vh;
+    width: 4vh;
+  }
 }
 header a:hover {
   background-color: #254726;
@@ -134,6 +191,19 @@ header img {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1023px) {
+  .nav {
+    height: 7.5vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav {
+    height: 7.5vh;
+    z-index: 99;
+    bottom: 0;
+    background-color: rgba(29, 29, 29, 0.95);
+  }
+}
 .nav-annonce {
   display: flex;
   justify-content: center;
@@ -146,6 +216,12 @@ header img {
   width: 7.5vw;
   height: 12.5vh;
 }
+@media only screen and (max-width: 767px) {
+  .nav-annonce-containerLink {
+    width: 12.5vw;
+    height: 7.5vh;
+  }
+}
 .nav-annonce-containerLink a {
   height: 5vh;
   width: 5vh;
@@ -155,6 +231,18 @@ header img {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+}
+@media only screen and (max-width: 1023px) {
+  .nav-annonce-containerLink a {
+    height: 3vh;
+    width: 3vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav-annonce-containerLink a {
+    height: 4vh;
+    width: 4vh;
+  }
 }
 .nav-annonce-containerLink a:hover {
   background-color: #d6c100;
@@ -167,12 +255,33 @@ header img {
   width: 60%;
   height: auto;
 }
+.nav-annonce-message {
+  line-height: 1.2rem;
+  font-size: 1rem;
+  color: #646464;
+}
+@media only screen and (max-width: 767px) {
+  .nav-annonce-message {
+    display: none;
+  }
+}
 .nav-menu {
   width: 7.5vw;
   height: 12.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 1023px) {
+  .nav-menu {
+    height: 7.5vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav-menu {
+    width: 12.5vw;
+    height: 7.5vh;
+  }
 }
 .nav-menu-containerBurger {
   height: 5vh;
@@ -183,12 +292,28 @@ header img {
   align-items: center;
   cursor: pointer;
 }
+@media only screen and (max-width: 1023px) {
+  .nav-menu-containerBurger {
+    height: 3vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav-menu-containerBurger {
+    height: 4vh;
+  }
+}
 .nav-menu-containerBurger > div {
   transition: 0.5s;
   height: 6px;
   width: 6px;
   background-color: #a0a0a0;
   border-radius: 50%;
+}
+@media only screen and (max-width: 767px) {
+  .nav-menu-containerBurger > div {
+    height: 5px;
+    width: 5px;
+  }
 }
 .nav-menu-containerBurger:hover > div {
   background-color: #254726;
@@ -201,6 +326,20 @@ header img {
   position: fixed;
   display: flex;
 }
+@media only screen and (max-width: 1023px) {
+  .main-about {
+    height: 60vh;
+    margin-top: 7.5vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-about {
+    height: 72.5vh;
+    margin-top: 7.5vh;
+    padding: 0;
+    background-color: greenyellow;
+  }
+}
 .main-about-text {
   display: flex;
   flex-direction: column;
@@ -210,28 +349,86 @@ header img {
   height: 100%;
   text-align: right;
 }
+@media only screen and (max-width: 1023px) {
+  .main-about-text {
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-about-text {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 7.5%;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    z-index: 99;
+  }
+}
 .main-about-text p {
   padding-left: 20%;
+}
+@media only screen and (max-width: 1023px) {
+  .main-about-text p {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-about-text p {
+    padding-left: 0;
+    color: #c2c2c2;
+  }
 }
 .main-about-img {
   width: 40%;
   height: 100%;
-  background-image: url(../../images/Lucas.jpg);
+  background-image: url(../images/Lucas.jpg);
   background-size: cover;
   background-position: center;
   background-color: #868686;
   /* Sécurité si l'image ne se charge pas */
 }
+@media only screen and (max-width: 767px) {
+  .main-about-img {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+  }
+}
 
 .main-project {
-  padding: 0 7.5%;
-  padding-top: 100vh;
+  padding: 100vh 7.5% 0;
+}
+@media only screen and (max-width: 1023px) {
+  .main-project {
+    padding: 67.5vh 7.5% 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-project {
+    padding: 100vh 0 0;
+  }
 }
 .main-project-grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(3, 50vh);
+}
+@media only screen and (max-width: 1023px) {
+  .main-project-grid {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(5, 50vh);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-project-grid {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(5, 50vh);
+  }
 }
 .main-project-box {
   padding: 25%;
@@ -241,6 +438,7 @@ header img {
   text-align: center;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
   background-color: #f1f1f1;
 }
 .main-project-box-description {
@@ -291,23 +489,88 @@ header img {
   grid-row: 1/3;
   background-color: #d2cecd;
 }
+@media only screen and (max-width: 1023px) {
+  .gameBoyProject {
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gameBoyProject {
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+}
 
 .contrastAgency {
   grid-column: 2/3;
   grid-row: 1/2;
   background-color: #cabcba;
 }
-
-.communicationAct23 {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  background-color: #e6e6e6;
+@media only screen and (max-width: 1023px) {
+  .contrastAgency {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contrastAgency {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
 }
 
 .act23 {
   grid-column: 2/3;
   grid-row: 2/3;
   background-color: #dad2cf;
+}
+@media only screen and (max-width: 1023px) {
+  .act23 {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .act23 {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+}
+
+.communicationAct23 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: #e6e6e6;
+}
+@media only screen and (max-width: 1023px) {
+  .communicationAct23 {
+    grid-column: 1;
+    grid-row: 4/5;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .communicationAct23 {
+    grid-column: 1;
+    grid-row: 4/5;
+  }
+}
+
+.tonProjet {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+@media only screen and (max-width: 1023px) {
+  .tonProjet {
+    grid-column: 1;
+    grid-row: 5/6;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tonProjet {
+    grid-column: 1;
+    grid-row: 5/6;
+  }
 }
 
 footer {
@@ -318,6 +581,11 @@ footer {
   height: 12.5vh;
   position: relative;
   background-color: #f1f1f1;
+}
+@media only screen and (max-width: 767px) {
+  footer {
+    padding-bottom: 12.5vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
