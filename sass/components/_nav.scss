@@ -105,6 +105,7 @@
             justify-content: space-evenly;
             align-items: center;
             cursor: pointer;
+            transition: 1s;
 
             @include media(tablet) {
                 height: 3vh;
@@ -112,6 +113,9 @@
 
             @include media(phone) {
                 height: 4vh;
+            }
+            &:hover {
+                transform: rotate(450deg);
             }
 
             & > div {
