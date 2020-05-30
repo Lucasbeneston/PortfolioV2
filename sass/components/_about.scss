@@ -1,21 +1,12 @@
 .main {
     &-about {
-        padding: 0 7.5%;
-        height: 87.5vh;
-        margin-top: 12.5vh;
-        position: fixed;
+        padding: 12.5vh 7.5% 0;
+        height: 100vh;
         display: flex;
 
-        @include media(tablet) {
-            height: 60vh;
-            margin-top: 7.5vh;
-        }
-
         @include media(phone) {
-            height: 72.5vh;
-            margin-top: 7.5vh;
+            height: 100vh;
             padding: 0;
-            background-color: greenyellow;
         }
 
         &-text{
@@ -23,7 +14,7 @@
             flex-direction: column;
             justify-content: flex-end;
             padding: 7.5%;
-            width: 60%;
+            width: 50%;
             height: 100%;
             text-align: right;
 
@@ -32,14 +23,14 @@
             }
 
             @include media(phone) {
-                background-color: rgba(0, 0, 0, 0.75);
-                padding: 7.5%;
+                background-color: rgba(204, 204, 204, 0.65);
+                padding: 12.5%;
                 width: 100%;
                 justify-content: center;
-                position: fixed;
                 text-align: center;
                 top: 0;
-                z-index: 99;
+                z-index: 50;
+                position: absolute;
             }
 
             p {
@@ -51,13 +42,13 @@
 
                 @include media(phone) {
                     padding-left: 0;
-                    color: rgb(194, 194, 194);
+                    color: rgb(0, 0, 0);
                 }
             }
         }
 
         &-img {
-            width: 40%;
+            width: 50%;
             height: 100%;
             background-image: url(../images/Lucas.jpg);
             background-size: cover;
@@ -65,9 +56,9 @@
             background-color: rgb(134, 134, 134); /* Sécurité si l'image ne se charge pas */
 
             @include media(phone) {
+                position: relative;
                 height: 100vh;
                 width: 100%;
-                position: fixed;
                 text-align: center;
                 top: 0;
             }

@@ -25,7 +25,14 @@
         </div>
     </nav>
 
-    <header>
+    <header class="header">
+    <div class="header-navigation">
+        <a href="#about-section">A propos</a>
+        <a href="#project-section">Réalisations</a>
+        <a href="">Contact</a>
+    </div>
+
+    <div class="header-links">
         <a href="https://www.linkedin.com/in/beneston-lucas/">
             <img src="images/linkedin-white.png" alt="">
         </a>
@@ -35,10 +42,11 @@
         <a href="images/CV-dev-web.pdf">
             <img src="images/resume.png" alt="">
         </a>
+    </div>
     </header>
 
     <main class="main">
-        <section class="main-about">
+        <section id="about-section" class="main-about">
             <div class="main-about-text">
                 <h1>Lucas BENESTON</h1>
                 <h2>Développeur web full stack JS</h2>
@@ -47,7 +55,7 @@
             <div class="main-about-img"></div>
         </section>
 
-        <section class="main-project">
+        <section id="project-section" class="main-project">
             <div class="main-project-grid">
                 <div class="main-project-box gameBoyProject">
                     <img class="main-project-box-illustration" src="images/gameboy.png" alt="">

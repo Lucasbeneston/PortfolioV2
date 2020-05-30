@@ -21,7 +21,6 @@ h2 {
 
     @include media(phone){
         font-size: 1.75rem;
-        color: rgb(194, 194, 194);
     }
 }
 
@@ -54,9 +53,4 @@ p {
     font-size: 1rem;
     line-height: 1.75rem;
     color: rgb(100, 100, 100);
-
-    @include media(phone){
-        font-size: 0.90rem;
-        line-height: 1.5rem;
-    }
 }
